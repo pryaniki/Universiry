@@ -1,0 +1,13 @@
+1)ls | tee foo bar
+  echo "4" | tee 1 2
+2)cat foo bar > buz
+3)cat foo bar | cut -c 1-6 > buz
+
+
+
+Win
+1)ls | Tee-Object foo | Tee-Object bar
+2)cat foo, bar > buz
+3) Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name foo -PropertyType String -Value $PSHome
+New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name bar -PropertyType String -Value $PSHome

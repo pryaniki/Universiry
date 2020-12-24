@@ -1,0 +1,5 @@
+1     gcc hw.c -o hw && ./hw 
+2    :4,15!sort -t ":" -k2
+3.1  :g/application\/x-/d
+3.2  tr ' ' '\n' | sort | tr '\n' ' ' 
+
